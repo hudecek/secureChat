@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SecureChat</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="forge.bundle.js"></script>
+	<script type="text/javascript" src="client.js"></script>
+	<script type="text/javascript" src="http://fgnass.github.io/spin.js/spin.min.js"></script>
+</head>
+<body>
+	<div id="menu">
+		<div id="menuContent">
+			<div id="heading">
+				<a href="index.html"><p>SecureChat</p></a>
+			</div>
+			<ul>
+				<a href="index.html"><li class="active" class="menuLink">Chat</li></a>
+				<a href="about.html"><li class="menuLink">About</li></a>
+				<a href="contact.html"><li class="menuLink">Contact</li></a>
+			</ul>
+		</div>
+	</div>
+	<div id="container">
+
+			<div id="details">
+
+			</div>
+
+			<div id="chatContains">
+
+			</div>
+
+
+			<div id="enterMessage">
+				<input type="text" id="message" value="Enter message" class="emptyClick">
+				<button onclick="sendMessage();" id="send" class="button">Send</button>
+			</div>
+
+
+	</div>
+
+	<div id="login">
+			<div class="line">
+				<p id="error"></p>
+			</div>
+			<div class="line">
+				<input type="text" name="nick" value="Enter nickname" id="nickname" class="emptyClick centerHorizontally">
+			</div>
+			<div class="line">
+				<input type="submit" value="Enter" onclick="start();" class="button centerHorizontally">
+			</div>
+	</div>
+
+	<div id="footer">
+		<p>#created by Ján Hudeček as a project for CSCE 463 Data and Network Security 2015</p>
+	</div>
+</body>
+</html>
