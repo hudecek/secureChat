@@ -26,7 +26,17 @@
 	<div id="container">
 
 			<div id="details">
+				<div id="roomlist">
+					<div class="room active" id="0" onclick="changeRoom(0)">Public</div>
+				</div>
 
+				<div id="newRoom">
+					<p id="newRoomHeading">New room</p>
+				</div>
+
+				<div id="newRoomDetails" hidden>
+					<input type="text" value="Room name" id="newRoomName">
+				</div>
 			</div>
 
 			<div id="chatContains">
@@ -36,7 +46,7 @@
 
 			<div id="enterMessage">
 				<input type="text" id="message" value="Enter message" class="emptyClick">
-				<button onclick="sendMessage();" id="send" class="button">Send</button>
+				<button id="send" class="button">Send</button>
 			</div>
 
 

@@ -1,6 +1,7 @@
-function room(id, name, userid) {
+function room(id, name, hidden, userid) {
 	this.id = id;
 	this.name = name;
+	this.hidden = hidden;
 	this.admin = userid;
 	this.users += userid;
 }
